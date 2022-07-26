@@ -1,5 +1,5 @@
 import requests
-from config import TOKEN
+from config import TOKEN #указать свой токен внутри файла config
 from config import URL
 
 
@@ -24,7 +24,7 @@ class YaUploader:
 
 
 if __name__ == '__main__':
-    path_to_file = ...
+    path_to_file = ... #необходимо указать путь до загружаемого файла
     token = TOKEN
     uploader = YaUploader(token)
     print(f"Загружаем файл {path_to_file.split('/', )[-1]} на Яндекс.Диск")
